@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【音樂大雜燴】一個人太孤單？樂團才是靈魂的火花！ 🎸✨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        girlie: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            pink: '#FFD1DC',
+                            dreamy: '#FFB7CE',
+                            lavender: '#E6E6FA'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fff1f2;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(343,100%,92%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(240,100%,98%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(330,100%,92%,1) 0, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(244, 63, 94, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #f43f5e, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-marker {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-marker::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: #fecdd3;
+            z-index: -1;
+            border-radius: 4px;
+        }
+
+        .media-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: transform 0.5s ease;
+        }
+
+        .media-container img:hover {
+            transform: scale(1.02);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 leading-relaxed overflow-x-hidden">
+
+    <!-- Header / Banner Section -->
+    <header class="relative min-h-[70vh] flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+        <div class="absolute top-10 left-10 w-24 h-24 bg-pink-200 rounded-full blur-3xl opacity-60 animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-32 h-32 bg-rose-200 rounded-full blur-3xl opacity-60 animate-float"></div>
+        
+        <div class="z-10 max-w-4xl mx-auto space-y-6">
+            <div class="inline-block px-4 py-1 rounded-full bg-white/50 border border-rose-200 text-rose-500 font-semibold text-sm tracking-widest uppercase">
+                Student ID: B11208062 • Music Blog
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">
+                【音樂大雜燴】<br/>
+                <span class="text-gradient">一個人太孤單？樂團才是靈魂的火花！</span> 🎸✨
+            </h1>
+            
+            <div class="w-full max-w-5xl mx-auto mt-8 media-container">
+                <img src='https://opal.google/board/blobs/50385ab7-90c0-4268-8960-6e0a6fd3978c' alt='樂團夢幻插畫 Banner' class="object-cover aspect-[21/9] animate-float" />
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24 space-y-20 relative">
+        
+        <!-- Intro Section -->
+        <section class="glass-card p-8 md:p-12 rounded-[2rem] space-y-6">
+            <h2 class="text-2xl font-bold text-rose-500 flex items-center gap-2">
+                <span class="section-marker">前言：為什麼我們愛團勝過個人？</span>
+            </h2>
+            <div class="text-lg text-gray-700 leading-loose space-y-4">
+                <p>
+                    說到音樂，有些人追求的是極致的個人技法，但我總覺得，音樂最迷人的地方往往不在於獨奏的清冷，而是在於那種<span class="font-bold text-rose-400">「眾人拾柴火焰高」</span>的化學反應。想像一下，一碗拉麵如果只有麵條，那充其量只是碳水化合物的堆疊；必須配上熬製數小時的濃郁濃湯，再加上那片靈魂叉燒與糖心蛋，這才叫饗宴。
+                </p>
+                <p>
+                    樂團（Musical Band/Group）就是那碗完美的拉麵。它不僅僅是兩位或以上音樂人的物理堆疊，而是一種精神上的「組隊打怪」。當不同頻率的人聚在一起，試圖在節拍器的律動中尋找共同點時，那種從混亂到和諧的魔力，是任何數位合成器都難以 100% 擬造的人性光輝。
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 1: Band Types (Bento Style) -->
+        <section class="space-y-8">
+            <h2 class="text-3xl font-extrabold text-center text-gray-800">一、 樂團圖鑑：你的音樂靈魂屬於哪一派？</h2>
+            <div class="bento-grid">
+                <div class="glass-card p-6 rounded-3xl hover:bg-rose-50 transition-colors border-l-4 border-rose-400">
+                    <h3 class="text-xl font-bold mb-3 text-rose-600">🎸 搖滾/流行組</h3>
+                    <p class="text-sm text-gray-600">英雄敘事。主唱是門面，吉他手是靈魂，貝斯手是脊椎（不是迷因！），鼓手則是掌控心跳的獨裁者。</p>
+                </div>
+                <div class="glass-card p-6 rounded-3xl hover:bg-purple-50 transition-colors border-l-4 border-purple-400">
+                    <h3 class="text-xl font-bold mb-3 text-purple-600">🎻 氣勢磅礡交響組</h3>
+                    <p class="text-sm text-gray-600">高度標準化的集體主義行動。一百個齒輪嚴格遵循樂譜，目光鎖定指揮的小棍子，展現秩序之美。</p>
+                </div>
+                <div class="glass-card p-6 rounded-3xl hover:bg-amber-50 transition-colors border-l-4 border-amber-400">
+                    <h3 class="text-xl font-bold mb-3 text-amber-600">🎷 自由靈魂爵士組</h3>
+                    <p class="text-sm text-gray-600">劇本只是參考。Freestyle 的高手對決，在傾聽與接招中，讓每一秒都成為無法複製的瞬間。</p>
+                </div>
+                <div class="glass-card p-6 rounded-3xl hover:bg-pink-50 transition-colors border-l-4 border-pink-400">
+                    <h3 class="text-xl font-bold mb-3 text-pink-600">💎 精準節奏偶像組合</h3>
+                    <p class="text-sm text-gray-600">現代工業巔峰。分工明確，追求完美的潮流機器，將音樂轉化為全方位的感官極致體驗。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media 2 Integration -->
+        <section class="media-container">
+            <img src='https://opal.google/board/blobs/e44d2d1a-555c-4583-bd11-25cd373fb918' alt='夢幻音樂創作氛圍' class="w-full" />
+            <p class="text-center mt-4 text-rose-400 font-medium italic">「音樂創作的魔力與夢幻粉色的碰撞」</p>
+        </section>
+
+        <!-- Section 2: History -->
+        <section class="relative overflow-hidden bg-rose-500 rounded-[3rem] p-8 md:p-12 text-white">
+            <div class="absolute top-0 right-0 p-8 opacity-20 text-6xl">🕰️</div>
+            <h2 class="text-3xl font-bold mb-8">二、 樂團時光機：從宮廷貴氣到車庫龐克</h2>
+            <div class="space-y-8 relative">
+                <div class="border-l-2 border-rose-200 pl-6 space-y-2">
+                    <span class="text-rose-200 font-bold">17-19 世紀 古典時期</span>
+                    <p>權力的附庸，宮廷與教會演出。穿得像企鵝一樣嚴肅，體現對巨集敘事的嚮往。</p>
+                </div>
+                <div class="border-l-2 border-rose-200 pl-6 space-y-2">
+                    <span class="text-rose-200 font-bold">1920-1940 年代 爵士大樂隊</span>
+                    <p>廣播普及，爵士樂打破階級。大樂隊讓音樂走進舞池，成為大眾娛樂核心。</p>
+                </div>
+                <div class="border-l-2 border-rose-200 pl-6 space-y-2">
+                    <span class="text-rose-200 font-bold">1960 年代 披頭四旋風</span>
+                    <p>關鍵轉折點。樂團不再只是演繹者，而是原創藝術家。車庫也能改變世界。</p>
+                </div>
+                <div class="border-l-2 border-rose-200 pl-6 space-y-2">
+                    <span class="text-rose-200 font-bold">80 年代至今 電子化浪潮</span>
+                    <p>合成器與 Daft Punk 的崛起。音樂從物理聲學轉向電路與代碼的浪漫。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 & 4: Modern & Drama -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-[2rem] space-y-4">
+                <h3 class="text-2xl font-bold text-gray-800"><span class="section-marker">三、 現在流行什麼？</span></h3>
+                <ul class="space-y-4 text-gray-600 text-sm">
+                    <li><strong class="text-rose-500">獨立樂團 (Indie):</strong> 拒絕商業包裝，追求「小眾美學」與社群感。</li>
+                    <li><strong class="text-rose-500">K-pop 奇蹟:</strong> BTS、BLACKPINK 證明了樂團概念可以極致工業化。</li>
+                    <li><strong class="text-rose-500">跨界混搭:</strong> 交響樂與重金屬，古典與電子，模糊邊界的驚喜。</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-[2rem] space-y-4 border-2 border-amber-100">
+                <h3 class="text-2xl font-bold text-gray-800"><span class="section-marker">四、 愛恨糾葛 🍉</span></h3>
+                <ul class="space-y-4 text-gray-600 text-sm">
+                    <li><strong class="text-amber-600">出名變心?</strong> 商業與藝術的永恆拉鋸。</li>
+                    <li><strong class="text-amber-600">拆夥宿命?</strong> 天才大腦的共識比婚姻還難維持（看看 Oasis）。</li>
+                    <li><strong class="text-amber-600">虛擬靈魂?</strong> AI 樂團算樂團嗎？我們追求的是完美還是「鮮活」？</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 5: Future -->
+        <section class="space-y-8">
+            <h2 class="text-3xl font-extrabold text-center text-gray-800">五、 20XX 年的樂團：我們在元宇宙見！</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-white/40 p-6 rounded-2xl text-center hover:shadow-lg transition-all border border-pink-100">
+                    <div class="text-3xl mb-2">🕶️</div>
+                    <div class="font-bold text-rose-500 mb-1">元宇宙</div>
+                    <p class="text-xs text-gray-500">全球粉絲一起在數位空間跳舞</p>
+                </div>
+                <div class="bg-white/40 p-6 rounded-2xl text-center hover:shadow-lg transition-all border border-pink-100">
+                    <div class="text-3xl mb-2">🤖</div>
+                    <div class="font-bold text-rose-500 mb-1">AI 團員</div>
+                    <p class="text-xs text-gray-500">不支薪、不吵架的靈感隊友</p>
+                </div>
+                <div class="bg-white/40 p-6 rounded-2xl text-center hover:shadow-lg transition-all border border-pink-100">
+                    <div class="text-3xl mb-2">🌿</div>
+                    <div class="font-bold text-rose-500 mb-1">永續巡演</div>
+                    <p class="text-xs text-gray-500">低碳發電，為地球歌唱</p>
+                </div>
+                <div class="bg-white/40 p-6 rounded-2xl text-center hover:shadow-lg transition-all border border-pink-100">
+                    <div class="text-3xl mb-2">⛓️</div>
+                    <div class="font-bold text-rose-500 mb-1">粉絲股東</div>
+                    <p class="text-xs text-gray-500">NFT 投資，去中心化的資助</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Outro -->
+        <footer class="glass-card p-12 rounded-[3rem] text-center space-y-8 mb-20">
+            <h2 class="text-3xl font-bold text-gradient">結語：下一次，約朋友去聽 Live 吧！</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                無論樂團的形式如何隨時代更迭，其核心價值始終沒變：那是一份「一起創作」的共鳴。這種共鳴發生在團員之間，也發生在台上與台下的連結之間。
+            </p>
+            <div class="bg-rose-500 text-white p-8 rounded-2xl space-y-4">
+                <p class="text-xl font-semibold">在你心中，哪一個樂團是你永遠無法取代、甚至可以被稱作「神級」的存在？</p>
+                <div class="flex gap-4 justify-center">
+                    <button class="bg-white text-rose-500 px-6 py-2 rounded-full font-bold hover:bg-rose-50 transition-colors">留言分享</button>
+                    <button class="border border-white text-white px-6 py-2 rounded-full font-bold hover:bg-white/10 transition-colors">收藏文章</button>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Interactive floating elements -->
+    <div class="fixed top-20 right-[-20px] text-pink-200 text-8xl opacity-30 select-none pointer-events-none">♪</div>
+    <div class="fixed bottom-20 left-[-20px] text-pink-200 text-8xl opacity-30 select-none pointer-events-none">♫</div>
+
+</body>
+</html>
